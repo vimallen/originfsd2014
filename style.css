@@ -462,15 +462,16 @@ sass --watch style.scss:../style.css */
 /* CONTENTS
 
 =HTML5 Boilerplate styles
+=Variables
 =Author's custom styles
-
+=Media queries
+=Helper
+=Print styles
 
 
 */
 /* =Variables */
-/* $fsd-purple: #663079; */
-/* $fsd-orange: #f18500; */
-/* $fsd-background: linen; */
+/* $brand-color: #663079; */
 /* $pad: 1em; */
 /* =HTML5 Boilerplate styles - h5bp.com (generated via initializr.com) */
 html,
@@ -579,9 +580,7 @@ textarea {
 .clearfix {
   *zoom: 1; }
 
-/* ==========================================================================
-   Print styles
-   ========================================================================== */
+/* =Print styles */
 @media print {
   * {
     background: transparent !important;

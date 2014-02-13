@@ -20,8 +20,11 @@ sass --watch style.scss:../style.css */
 /* CONTENTS
 
 =HTML5 Boilerplate styles
+=Variables
 =Author's custom styles
-
+=Media queries
+=Helper
+=Print styles
 
 
 */
@@ -29,9 +32,7 @@ sass --watch style.scss:../style.css */
 
 /* =Variables */
 
-/* $fsd-purple: #663079; */
-/* $fsd-orange: #f18500; */
-/* $fsd-background: linen; */
+/* $brand-color: #663079; */
 
 /* $pad: 1em; */
 
@@ -224,9 +225,7 @@ textarea {
     *zoom: 1;
 }
 
-/* ==========================================================================
-   Print styles
-   ========================================================================== */
+/* =Print styles */
 
 @media print {
     * {
