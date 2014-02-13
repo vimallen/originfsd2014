@@ -27,7 +27,7 @@
 
 	add_theme_support('post-thumbnails');
 	
-	// register_nav_menus(array('primary' => 'Primary Navigation'));
+	register_nav_menus(array('primary' => 'Primary Navigation'));
 
 	/* ========================================================================================================================
 	
@@ -38,6 +38,13 @@
 	add_action( 'wp_enqueue_scripts', 'starkers_script_enqueuer' );
 
 	add_filter( 'body_class', array( 'Starkers_Utilities', 'add_slug_to_body_class' ) );
+
+	// Stop WordPress adding dimensions on upload
+
+	function remove_width_attribute( $html ) {
+	$html = preg_replace( '/(width|height)="\d*"\s/', "", $html );
+	return $html;
+}
 
 	/* ========================================================================================================================
 	
@@ -68,6 +75,20 @@
 
 		wp_register_style( 'screen', get_stylesheet_directory_uri().'/style.css', '', '', 'screen' );
         wp_enqueue_style( 'screen' );
+
+		/**
+        Adding a parameter of false puts the script in the head, where Modernizr needs to be, for example.
+        Adding true puts the script before the closing tag.
+        **/
+
+		wp_register_script( 'modernizr', get_template_directory_uri().'/js/modernizr-v2.7.1.js', array(), '2.6.2', false );
+		wp_enqueue_script( 'modernizr' );
+
+		wp_register_script( 'respond', get_template_directory_uri().'/js/respond.min.js', array(), '1.1.0', true );
+		wp_enqueue_script( 'respond' );
+
+
+
 	}	
 
 	/* ========================================================================================================================

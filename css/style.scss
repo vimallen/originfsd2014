@@ -13,6 +13,10 @@ Tags: 			clean, simple
 
 @import "normalize";/* Turn on and off to debug */
 
+/* If compiling in the command line:
+
+sass --watch style.scss:../style.css */
+
 /* CONTENTS
 
 =HTML5 Boilerplate styles
@@ -21,6 +25,15 @@ Tags: 			clean, simple
 
 
 */
+
+
+/* =Variables */
+
+/* $fsd-purple: #663079; */
+/* $fsd-orange: #f18500; */
+/* $fsd-background: linen; */
+
+/* $pad: 1em; */
 
 /* =HTML5 Boilerplate styles - h5bp.com (generated via initializr.com) */
 
@@ -81,7 +94,11 @@ textarea {
 /* =Author's custom styles */
 
 
-
+*, *:before, *:after {
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box;
+}
 
 
 
@@ -95,8 +112,49 @@ textarea {
 
 
 
-@media only screen and (min-width: 35em) {
-
+@media only screen and (min-width: 30em) /* 480px */{
+ 
+ 
+ 
+ 
+}
+ 
+ 
+ 
+@media only screen and (min-width: 37.5em) /* 600px */ {
+ 
+ 
+}
+ 
+ 
+ 
+@media only screen and (min-width: 48em) /* 768px */ {
+ 
+ 
+}
+ 
+ 
+@media only screen and (min-width: 64em)/* 1024px */ {
+ 
+ 
+}
+ 
+ 
+@media only screen and (min-width: 78.75em) /* 1260px */  {
+ 
+ 
+}
+ 
+ 
+ 
+/* WIDESCREEN */
+ 
+/* Increased body size for legibility */
+ 
+@media only screen and (min-width: 87.5em) /* 1400px */ {
+ 
+     body {font-size:120%;} 
+	
 }
 
 @media print,
