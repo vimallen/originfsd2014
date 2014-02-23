@@ -14,6 +14,9 @@ Tags: 			clean, simple
 @import "normalize";/* Turn on and off to debug */
 @import "helper";
 @import "h5bp";
+@import "modules";
+@import "nav";
+@import "grid";
 
 /* If compiling in the command line:
 
@@ -57,7 +60,10 @@ img	{
 	height: auto;
 }
 
-
+body	{
+		width: 80%;
+		margin: 0 auto;
+}
 
 
 
@@ -82,11 +88,13 @@ img	{
 }
  
  
- 
 @media only screen and (min-width: 48em) /* 768px */ {
+
+	@import "grid"; 
  
  
-}
+} 
+
  
  
 @media only screen and (min-width: 64em)/* 1024px */ {

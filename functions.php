@@ -56,7 +56,28 @@ function remove_width_attribute( $html ) {
 	e.g. require_once( 'custom-post-types/your-custom-post-type.php' );
 	
 	======================================================================================================================== */
+// Creates Module post type
 
+	register_post_type('module', array(
+	'label' => 'Module',
+	'public' => true,
+	'show_ui' => true,
+	'capability_type' => 'post',
+	'hierarchical' => false,
+	'rewrite' => array('slug' => 'home'),
+	'query_var' => true,
+	'supports' => array(
+	'title',
+	'editor',
+	'excerpt',
+	'trackbacks',
+	'custom-fields',
+	'',
+	'revisions',
+	'thumbnail',
+	'author',
+	'page-attributes',)
+	) );
 
 
 	/* ========================================================================================================================

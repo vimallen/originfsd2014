@@ -1,0 +1,41 @@
+.nav	{
+
+    > li{
+        display:list-item;
+		list-style: none;
+		margin-left: -3em;
+
+        > a{
+            display:block;
+			font-size: 1em;
+			padding-bottom: 1em;
+			
+        }
+    }
+}
+
+
+@media only screen and (min-width: 48em) /* 768px */ {
+/* Turns nav horizontal. Defaults for mobile. See media queries */   
+ .nav{
+    list-style:none;
+    margin-left:0;
+    @extend .clearfix;
+	float: right;
+	margin-top:	-4em;
+
+    > li{
+
+        &,
+        > a{
+            display:inline-block;
+           *display:inline;
+            zoom:1;
+			padding: 1em;
+		}
+    }
+} 
+ 
+}
+ 
+
