@@ -26,13 +26,13 @@
           $website_url = $custom["website_url"][0];
      ?>
 
-<div class="col-1-3">
+
 <div class="module">
 <h3><?php the_title(); ?></h3>
 <?php the_post_thumbnail(); ?> </a>
 <?php the_content(); ?>
 </div><!--module-->
-</div><!--col-->
+
 
 
 <?php endwhile; ?>

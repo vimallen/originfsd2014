@@ -92,7 +92,9 @@ body	{
 
 	@import "grid"; 
  
- 
+.module {        
+		@extend %col-1-3;    
+}  
 } 
 
  
