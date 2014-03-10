@@ -1,5 +1,5 @@
 /*!
-Theme Name: 	Origin
+Theme Name: 	Origin:FSD
 Theme URI: 		http://www.daveallengraphics.com/
 Description: 	Dave Allen Graphics base theme
 Version: 		1.0
@@ -10,36 +10,23 @@ Tags: 			clean, simple
 
 
 
+@import "helpers/variables";
+@import "base/h5bp";
+@import "components/modules";
+@import "base/normalize";
+@import "base/typography";
+@import "base/images";
+@import "helpers/helper";
+@import "layout/grid";
+@import "layout/layout";
+@import "layout/footer";
+@import "layout/navigation";
 
-@import "normalize";/* Turn on and off to debug */
-@import "helper";
-@import "h5bp";
-@import "modules";
-@import "nav";
-@import "grid";
 
 /* If compiling in the command line:
 
 sass --watch style.scss:../style.css */
 
-/* CONTENTS
-
-=HTML5 Boilerplate styles
-=Variables
-=Author's custom styles
-=Media queries
-=Helper
-=Print styles
-
-
-*/
-
-
-/* =Variables */
-
-/* $brand-color: #663079; */
-
-/* $pad: 1em; */
 
 
 
@@ -47,23 +34,16 @@ sass --watch style.scss:../style.css */
 /* =Author's custom styles */
 
 
-*, *:before, *:after {
-  -webkit-box-sizing: border-box; 
-  -moz-box-sizing: border-box; 
-  box-sizing: border-box;
-}
 
-/* =Responsive images */
+/* =Layout-mobile */
 
-img	{
-	max-width: 100%;
-	height: auto;
-}
 
-body	{
-		width: 80%;
-		margin: 0 auto;
-}
+
+
+
+
+/* removes padding left for mobile */
+
 
 
 
@@ -83,20 +63,84 @@ body	{
  
  
 @media only screen and (min-width: 37.5em) /* 600px */ {
- 
+
+
  
 }
- 
+
+/* =Action */
  
 @media only screen and (min-width: 48em) /* 768px */ {
 
-	@import "grid"; 
- 
-.module {        
-		@extend %col-1-3;    
-}  
-} 
 
+
+
+
+			
+
+/* Turns nav horizontal. Defaults for mobile. See media queries */   
+ /* .nav{ */
+ /*    list-style:none; */
+ /*    margin-left:0; */
+ /*    @extend .clearfix; */
+	/* float: right; */
+	/* margin-top:	-8em; */
+
+ /*    > li{ */
+
+ /*        &, */
+ /*        > a{ */
+ /*            display:inline-block; */
+ /*           *display:inline; */
+ /*            zoom:1; */
+			/* padding-right: 0.25em; */
+		/* } */
+ /*    } */
+/* } */
+
+
+
+
+
+/* Grid for portfolio landing page	*/
+
+[class*='col-'] {
+	float: left;
+	width: 20%;
+  padding-right: $pad;
+  .grid &:last-of-type {
+  	padding-right: $pad;
+  }
+}
+
+/* /1* Opt-in outside padding *1/ */
+/* .grid-pad { */
+/*   padding: $pad 0 $pad $pad; */
+/*   [class*='col-']:last-of-type { */
+/*     padding-right: $pad; */
+/*   } */
+/* } */
+
+/* /1* Grid for category pages *1/ */
+
+/* [class='col-category'] { */
+/* 	float: left; */
+/* 	width: 33.33%; */
+/*   padding-right: $pad; */
+/*   .grid &:last-of-type { */
+/*   	padding-right: $pad; */
+/*   } */
+/* } */
+
+/* /1* Opt-in outside padding *1/ */
+/* .grid-pad { */
+/*   padding: $pad 0 $pad $pad; */
+/*   [class='col-category']:last-of-type { */
+/*     padding-right: $pad; */
+/*   } */
+/* } */
+
+}
  
  
 @media only screen and (min-width: 64em)/* 1024px */ {
@@ -120,6 +164,13 @@ body	{
  
      body {font-size:120%;} 
 	
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
 }
 
 

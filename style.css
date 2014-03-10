@@ -1,5 +1,5 @@
 /*!
-Theme Name: 	Origin
+Theme Name: 	Origin:FSD
 Theme URI: 		http://www.daveallengraphics.com/
 Description: 	Dave Allen Graphics base theme
 Version: 		1.0
@@ -7,6 +7,93 @@ Author: 		Dave Allen
 Author URI: 	http://www.daveallengraphics.com/
 Tags: 			clean, simple
 */
+/* =Variables */
+/* =HTML5 Boilerplate styles - h5bp.com (generated via initializr.com) */
+html,
+button,
+input,
+select,
+textarea {
+  color: #222; }
+
+body {
+  font-size: 1em;
+  line-height: 1.4; }
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+img {
+  vertical-align: middle; }
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+textarea {
+  resize: vertical; }
+
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+/* =Responsive images */
+img {
+  max-width: 100%;
+  height: auto; }
+
+/* =Modules */
+/* .module-portfolio h3, .module-category h3	{ */
+/* 						padding-bottom: 2px; */
+/* 						border-bottom: 3px solid $fsd-purple; */
+/* 						color: #444; */
+/* } */
+/* .module-portfolio, .module-category 	{ */
+/* 				 	padding: 2px 4px 0px 4px; */
+/* 				  	border-bottom: 10px solid $fsd-orange; */
+/* 					min-height: 18em; */
+/* } */
+/* .module-portfolio:hover, .module-category:hover	{ */
+/* 						background-color: lighten($fsd-purple, 54); */
+/* } */
+/* .module-portfolio:hover, .module-category:hover	{ */
+/* 							-webkit-transition:background-color 0.5s ease-in; */
+/* 							-moz-transition:background-color 0.5s ease-in; */
+/* 							-o-transition:background-color 0.5s ease-in; */
+/* 							transition:background-color 0.5s ease-in; */
+/* 							text-decoration: none; */
+/* } */
+/* .module-category h3	{ */
+/* 					min-height: 3em; */
+/* } */
+/* /1* We want to insert >> after Read more links *1/ */
+/* .module-portfolio p:last-child:after { */
+/*   content: " >>"; */
+/*   color: $fsd-orange; */
+/* } */
+/* /1* but not after img links *1/ */
+/* .module-portfolio p:first-child:after { */
+/* 	content: none; */
+/* } */
+/* .module-portfolio, .module-category{ */
+/* 					margin-bottom: 2em; */
+/* } */
 /*! normalize.css v1.1.2 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -455,7 +542,23 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* Turn on and off to debug */
+/* =Typography */
+/* =Type sizes 
+10 / 16 =		0.625em			(10px equivalent)
+12 / 16 =		0.75em			(12px equivalent)
+14 / 16	= 		0.875em 		(14px equivalent)
+16 / 16	= 		1em 			(16px equivalent)
+18 / 16 = 		1.125em 		(18px equivalent)
+21 / 16 = 		1.3125em 		(21px equivalent)
+24 / 16 = 		1.5em 			(24px equivalent)
+30 / 16 = 		1.875em 		(30px equivalent)
+
+*/
+/* =Responsive images */
+img {
+  max-width: 100%;
+  height: auto; }
+
 /* =Helper */
 .ir {
   background-color: transparent;
@@ -506,145 +609,145 @@ table {
 .clearfix {
   *zoom: 1; }
 
-/* =HTML5 Boilerplate styles - h5bp.com (generated via initializr.com) */
-html,
-button,
-input,
-select,
-textarea {
-  color: #222; }
-
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none; }
-
-::selection {
-  background: #b3d4fc;
-  text-shadow: none; }
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0; }
-
-img {
-  vertical-align: middle; }
-
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0; }
-
-textarea {
-  resize: vertical; }
-
-.chromeframe {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0; }
-
-.nav > li {
-  display: list-item;
-  list-style: none;
-  margin-left: -3em; }
-  .nav > li > a {
-    display: block;
-    font-size: 1em;
-    padding-bottom: 1em; }
-
-@media only screen and (min-width: 48em) {
-  /* Turns nav horizontal. Defaults for mobile. See media queries */
-  .nav {
-    list-style: none;
-    margin-left: 0;
-    float: right;
-    margin-top: -4em; }
-    .nav > li,
-    .nav > li > a {
-      display: inline-block;
-      *display: inline;
-      zoom: 1;
-      padding: 1em; } }
-.grid {
-  margin: 0 0 20px 0; }
-
-[class*='mod-'] {
+/* Grid for category pages */
+[class='col-category'] {
   float: left;
-  padding-right: 20px; }
-  .grid [class*='mod-']:last-of-type {
-    padding-right: 0; }
-
-.module {
-  float: left;
-  background: lightblue;
-  padding: 1em; }
+  width: 33.33%;
+  padding-right: 0.5em; }
+  .grid [class='col-category']:last-of-type {
+    padding-right: 0.5em; }
 
 /* Opt-in outside padding */
 .grid-pad {
-  padding: 20px 0 20px 20px; }
-  .grid-pad [class*='mod-']:last-of-type {
-    padding-right: 20px; }
+  padding: 0.5em 0 0.5em 0.5em; }
+  .grid-pad [class='col-category']:last-of-type {
+    padding-right: 0.5em; }
 
-/* If compiling in the command line:
+/* Grid for portfolio landing page	*/
+[class*='col-'] {
+  float: left;
+  width: 20%;
+  padding-right: 0.5em; }
+  .grid [class*='col-']:last-of-type {
+    padding-right: 0.5em; }
 
-sass --watch style.scss:../style.css */
-/* CONTENTS
+/* Opt-in outside padding */
+.grid-pad {
+  padding: 0.5em 0 0.5em 0.5em; }
+  .grid-pad [class*='col-']:last-of-type {
+    padding-right: 0.5em; }
 
-=HTML5 Boilerplate styles
-=Variables
-=Author's custom styles
-=Media queries
-=Helper
-=Print styles
-
-
-*/
-/* =Variables */
-/* $brand-color: #663079; */
-/* $pad: 1em; */
-/* =Author's custom styles */
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* =Responsive images */
-img {
-  max-width: 100%;
-  height: auto; }
+footer {
+  clear: both;
+  background-color: #fff;
+  border-top: 3px solid orange;
+  margin-top: 3em;
+  padding-top: 1em; }
 
-body {
-  width: 80%;
-  margin: 0 auto; }
+/* =Links */
+/* Links global */
+/*	current page highlighting	*/
+/* #menu-nav-main .current-menu-item > a,#menu-nav-main .current-menu-ancestor > a, */
+/* #menu-nav-main .current_page_item > a, */
+/* #menu-nav-main .current_page_ancestor > a 	{ */
+/* 											color: orange; */
+/* } */
+/* .nav{ */
+/*     list-style:none; */
+/* } */
+/* .nav-home{ */
+/*     > li{ */
+/*         display:list-item; */
+/* 		list-style: none; */
+/* 		margin-left: -3em; */
+/*         > a{ */
+/*             display:block; */
+/* 			font-size: 1em; */
+/* 			padding-bottom: 1em; */
+/*         } */
+/*     } */
+/* } */
+/* =Action */
+/* @media only screen and (min-width: 48em) /1* 768px *1/ { */
+/* Turns nav horizontal. Defaults for mobile. See media queries */
+/* .nav{ */
+/*    list-style:none; */
+/*    margin-left:0; */
+/*    @extend .clearfix; */
+/* float: right; */
+/* margin-top:	-8em; */
+/*    > li{ */
+/*        &, */
+/*        > a{ */
+/*            display:inline-block; */
+/*           *display:inline; */
+/*            zoom:1; */
+/* padding-right: 0.25em; */
+/* } */
+/*    } */
+/* } */
+/* If compiling in the command line:
 
+sass --watch style.scss:../style.css */
+/* =Author's custom styles */
+/* =Layout-mobile */
+/* removes padding left for mobile */
 /* =Media queries */
+/* =Action */
 @media only screen and (min-width: 48em) {
-  .grid {
-    margin: 0 0 20px 0; }
-
-  [class*='mod-'] {
+  /* Turns nav horizontal. Defaults for mobile. See media queries */
+  /* .nav{ */
+  /*    list-style:none; */
+  /*    margin-left:0; */
+  /*    @extend .clearfix; */
+  /* float: right; */
+  /* margin-top:	-8em; */
+  /*    > li{ */
+  /*        &, */
+  /*        > a{ */
+  /*            display:inline-block; */
+  /*           *display:inline; */
+  /*            zoom:1; */
+  /* padding-right: 0.25em; */
+  /* } */
+  /*    } */
+  /* } */
+  /* Grid for portfolio landing page	*/
+  [class*='col-'] {
     float: left;
-    padding-right: 20px; }
-    .grid [class*='mod-']:last-of-type {
-      padding-right: 0; }
+    width: 20%;
+    padding-right: 0.5em; }
+    .grid [class*='col-']:last-of-type {
+      padding-right: 0.5em; }
 
-  .module {
-    width: 33.33%; }
-
-  .module {
-    float: left;
-    background: lightblue;
-    padding: 1em; }
-
-  /* Opt-in outside padding */
-  .grid-pad {
-    padding: 20px 0 20px 20px; }
-    .grid-pad [class*='mod-']:last-of-type {
-      padding-right: 20px; } }
+  /* /1* Opt-in outside padding *1/ */
+  /* .grid-pad { */
+  /*   padding: $pad 0 $pad $pad; */
+  /*   [class*='col-']:last-of-type { */
+  /*     padding-right: $pad; */
+  /*   } */
+  /* } */
+  /* /1* Grid for category pages *1/ */
+  /* [class='col-category'] { */
+  /* 	float: left; */
+  /* 	width: 33.33%; */
+  /*   padding-right: $pad; */
+  /*   .grid &:last-of-type { */
+  /*   	padding-right: $pad; */
+  /*   } */
+  /* } */
+  /* /1* Opt-in outside padding *1/ */
+  /* .grid-pad { */
+  /*   padding: $pad 0 $pad $pad; */
+  /*   [class='col-category']:last-of-type { */
+  /*     padding-right: $pad; */
+  /*   } */
+  /* } */ }
 /* WIDESCREEN */
 /* Increased body size for legibility */
 @media only screen and (min-width: 87.5em) {

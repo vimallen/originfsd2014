@@ -8,6 +8,11 @@ textarea {
     color: #222;
 }
 
+body {
+    font-size: 1em;
+    line-height: 1.4;
+	
+}
 
 ::-moz-selection {
     background: #b3d4fc;
@@ -47,4 +52,11 @@ textarea {
     background: #ccc;
     color: #000;
     padding: 0.2em 0;
+}
+
+/* =Responsive images */
+
+img	{
+	max-width: 100%;
+	height: auto;
 }
