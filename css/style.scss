@@ -1,5 +1,5 @@
 /*!
-Theme Name: 	Origin:FSD
+Theme Name: 	Origin:FSD-2014
 Theme URI: 		http://www.daveallengraphics.com/
 Description: 	Dave Allen Graphics base theme
 Version: 		1.0
@@ -16,11 +16,13 @@ Tags: 			clean, simple
 @import "base/normalize";
 @import "base/typography";
 @import "base/images";
+@import "base/theme";
 @import "helpers/helper";
 @import "layout/grid";
 @import "layout/layout";
 @import "layout/footer";
 @import "layout/navigation";
+@import "pages/home";
 
 
 /* If compiling in the command line:
