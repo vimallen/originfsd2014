@@ -568,8 +568,13 @@ body, html {
 body {
   font-size: 1em;
   background-color: #663079;
-  color: #282828;
-  text-align: center; }
+  color: #282828; }
+
+body.home {
+  background-color: #663079; }
+
+body:not(.home) {
+  background-color: #fff; }
 
 /* =Helper */
 .ir {
@@ -710,7 +715,8 @@ footer {
 @media only screen and (min-width: 37.5em) {
   .box1 {
     float: left;
-    width: 50%; }
+    width: 50%;
+    text-align: center; }
 
   .box2 {
     float: right;
