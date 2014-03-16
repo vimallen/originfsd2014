@@ -1,1 +1,19 @@
+.box2	{
+		background-color: #FFF;
+		height: 100%;
+}
 
+
+@media only screen and (min-width: 37.5em) /* 600px */ {
+.box1	 {
+			float: left;
+			width: 50%;
+					
+}
+
+.box2	 {
+			float: right;
+			width: 50%;
+}
+
+}
