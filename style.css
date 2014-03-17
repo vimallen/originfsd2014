@@ -574,7 +574,7 @@ body.home {
   background-color: #663079; }
 
 body:not(.home) {
-  background-color: #fff; }
+  background-color: teal; }
 
 /* =Helper */
 .ir {
@@ -828,7 +828,6 @@ sass --watch style.scss:../style.css */
 
   @page {
     margin: 0.5cm; }
-
   p,
   h2,
   h3 {
