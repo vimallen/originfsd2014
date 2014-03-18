@@ -6,7 +6,7 @@ ompiled source #
 *.exe
 *.o
 *.so
- 
+. 
 # Packages #
 ############
 # it's better to unpack these files and commit the raw source
@@ -44,8 +44,11 @@ ompiled source #
 # CodeKit #
 ###########
 	 codekit-config.json
+	 config.codekit
 	  
 # InDesign #
 ############
 	   
 	   *.idlk
+*.cssc
+*.sass-cache

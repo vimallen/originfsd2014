@@ -822,7 +822,6 @@ sass --watch style.scss:../style.css */
 
   @page {
     margin: 0.5cm; }
-
   p,
   h2,
   h3 {
