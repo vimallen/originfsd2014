@@ -3,11 +3,17 @@
 		height: 100%;
 }
 
+.box2 p	{
+		padding: 2em;
+}
+		
+
 
 @media only screen and (min-width: 37.5em) /* 600px */ {
 .box1	 {
 			float: left;
 			width: 50%;
+			text-align: center;
 					
 }
 

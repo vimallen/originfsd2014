@@ -554,6 +554,14 @@ table {
 30 / 16 = 		1.875em 		(30px equivalent)
 
 */
+body {
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  line-height: 160%; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-weight: bold; }
+
 /* =Responsive images */
 img {
   max-width: 100%;
@@ -568,8 +576,13 @@ body, html {
 body {
   font-size: 1em;
   background-color: #663079;
-  color: #282828;
-  text-align: center; }
+  color: #282828; }
+
+body.home {
+  background-color: #663079; }
+
+body:not(.home) {
+  background-color: #ccc; }
 
 /* =Helper */
 .ir {
@@ -707,10 +720,14 @@ footer {
   background-color: #FFF;
   height: 100%; }
 
+.box2 p {
+  padding: 2em; }
+
 @media only screen and (min-width: 37.5em) {
   .box1 {
     float: left;
-    width: 50%; }
+    width: 50%;
+    text-align: center; }
 
   .box2 {
     float: right;
