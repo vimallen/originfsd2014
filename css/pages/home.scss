@@ -2,25 +2,23 @@
 	width: 100%;
 }
 
-#flexible-box_logo-and-sign-up {
-	background-color: rgb(0,200,200);
+#flexible-box_logo {
+	background-color: $fsd-purple;
 }
 
-#flexible-box_preorder {
+#flexible-box_intro-home {
 	background-color: rgb(250,248,246);
 }	
 
 
-#logo-and-sign-up {
+#logo{
 	width: 100%;
 	padding: 3em 0 2em 0;
 }
 
-#section {
-	display: block;
-}
 
-#logo, #preorder, #sign-up {
+
+#logo,   {
 	width: 100%;
 }
 
@@ -34,7 +32,7 @@
 
 #preorder {
 	width: 100%;
-	background-color: rgb(250,248,246);
+	background-color: $fsd-background;
 	padding: 2em 0;
 	margin: 0;
 }
@@ -70,13 +68,11 @@
 		box-align:center;
 	}
 
-	#logo-and-sign-up {
+	#logo{
 		padding-top: 0.1em;
 	}
 	#preorder {
 		float: right;
 	}
-	input {
-		max-width: 340px;
-	}
+	
 }

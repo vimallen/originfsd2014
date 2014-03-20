@@ -11,21 +11,20 @@
 
 <?php Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header' ) ); ?>
 
-<div class="flexible-box" id="flexible-box_logo-and-sign-up">
-	<div id="logo-and-sign-up">
-    			
-<section id="logo">
+<div class="flexible-box" id="flexible-box_logo">
+	<div id="logo">
+	 <section id="logo">
 	<a href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/logo-fsd.png" alt="home page" /></a>
 </section> <!-- /logo -->
 
-<section id="sign-up">
+<section id="nav">
 <?php wp_nav_menu( array( 'menu_class' => 'nav-home',) ); ?>
-	</section> <!-- /sign-up -->	
+	</section> <!-- /nav -->	
 			
-    		</div> <!-- /logo-and-sign-up -->
+    		</div> <!-- /logo -->
 </div><!-- /flexible-box -->
 
-<div class="flexible-box" id="flexible-box_preorder">
+<div class="flexible-box" id="flexible-box_intro-home">
 	<div id="preorder-box">
 		<section id="preorder">
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
