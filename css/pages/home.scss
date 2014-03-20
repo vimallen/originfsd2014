@@ -1,25 +1,82 @@
-.box2	{
-		background-color: #FFF;
+.flexible-box {
+	width: 100%;
+}
+
+#flexible-box_logo-and-sign-up {
+	background-color: rgb(0,200,200);
+}
+
+#flexible-box_preorder {
+	background-color: rgb(250,248,246);
+}	
+
+
+#logo-and-sign-up {
+	width: 100%;
+	padding: 3em 0 2em 0;
+}
+
+#section {
+	display: block;
+}
+
+#logo, #preorder, #sign-up {
+	width: 100%;
+}
+
+#logo {
+	margin-bottom: 2.6em;
+}
+
+#preorder-box {
+	width: 100%;
+}
+
+#preorder {
+	width: 100%;
+	background-color: rgb(250,248,246);
+	padding: 2em 0;
+	margin: 0;
+}
+/* 1020px and above */
+@media screen and (min-width: 716px){
+	.flexible-box{
+		width: 50%;
 		height: 100%;
-}
-
-.box2 	{
-		padding: 2em;
-}
+		margin: 0 auto;
+		padding: 0;
+		display: box;
+		box-align: center;
+		float: left;
 		
+		/* Internet Explorer 10 */
+		display:-ms-flexbox;
+		-ms-flex-pack:center;
+		-ms-flex-align:center;
+	
+		/* Firefox */
+		display:-moz-box;
+		-moz-box-pack:center;
+		-moz-box-align:center;
+	
+		/* Safari, Chrome, and Opera */
+		display:-webkit-box;
+		-webkit-box-pack:center;
+		-webkit-box-align:center;
+	
+		/* W3C */
+		display:box;
+		box-pack:center;
+		box-align:center;
+	}
 
-
-@media only screen and (min-width: 37.5em) /* 600px */ {
-.box1	 {
-			float: left;
-			width: 50%;
-			text-align: center;
-					
-}
-
-.box2	 {
-			float: right;
-			width: 50%;
-}
-
+	#logo-and-sign-up {
+		padding-top: 0.1em;
+	}
+	#preorder {
+		float: right;
+	}
+	input {
+		max-width: 340px;
+	}
 }

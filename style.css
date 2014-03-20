@@ -575,11 +575,12 @@ body, html {
 
 body {
   font-size: 1em;
-  background-color: #663079;
-  color: #282828; }
+  background-color: #00c8c8;
+  color: #282828;
+  text-align: center; }
 
-body.home {
-  background-color: #663079; }
+* {
+  transition: 0.3s ease; }
 
 body:not(.home) {
   background-color: #ccc; }
@@ -716,22 +717,72 @@ footer {
 /* } */
 /*    } */
 /* } */
-.box2 {
-  background-color: #FFF;
-  height: 100%; }
+.flexible-box {
+  width: 100%; }
 
-.box2 {
-  padding: 2em; }
+#flexible-box_logo-and-sign-up {
+  background-color: #00c8c8; }
 
-@media only screen and (min-width: 37.5em) {
-  .box1 {
-    float: left;
+#flexible-box_preorder {
+  background-color: #faf8f6; }
+
+#logo-and-sign-up {
+  width: 100%;
+  padding: 3em 0 2em 0; }
+
+#section {
+  display: block; }
+
+#logo, #preorder, #sign-up {
+  width: 100%; }
+
+#logo {
+  margin-bottom: 2.6em; }
+
+#preorder-box {
+  width: 100%; }
+
+#preorder {
+  width: 100%;
+  background-color: #faf8f6;
+  padding: 2em 0;
+  margin: 0; }
+
+/* 1020px and above */
+@media screen and (min-width: 716px) {
+  .flexible-box {
     width: 50%;
-    text-align: center; }
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: box;
+    box-align: center;
+    float: left;
+    /* Internet Explorer 10 */
+    display: -ms-flexbox;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+    /* Firefox */
+    display: -moz-box;
+    -moz-box-pack: center;
+    -moz-box-align: center;
+    /* Safari, Chrome, and Opera */
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    /* W3C */
+    display: box;
+    box-pack: center;
+    box-align: center; }
 
-  .box2 {
-    float: right;
-    width: 50%; } }
+  #logo-and-sign-up {
+    padding-top: 0.1em; }
+
+  #preorder {
+    float: right; }
+
+  input {
+    max-width: 340px; } }
 /* If compiling in the command line:
 
 sass --watch style.scss:../style.css */
