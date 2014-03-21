@@ -728,11 +728,10 @@ footer {
 
 .logo {
   width: 100%;
-  border-bottom: 2px solid white; }
+  border-bottom: 4px solid #f18500;
+  padding-top: 2em;
+  padding-bottom: 2em; }
 
-@media only screen and (min-width: 37.5em) {
-  section.logo {
-    margin-top: -5em; } }
 .logo-holder {
   width: 100%; }
 
@@ -754,22 +753,23 @@ footer {
     display: box;
     box-align: center;
     float: left;
-    /* Internet Explorer 10 */
-    display: -ms-flexbox;
-    -ms-flex-pack: center;
-    -ms-flex-align: center;
-    /* Firefox */
-    display: -moz-box;
-    -moz-box-pack: center;
-    -moz-box-align: center;
-    /* Safari, Chrome, and Opera */
-    display: -webkit-box;
-    -webkit-box-pack: center;
-    -webkit-box-align: center;
-    /* W3C */
-    display: box;
-    box-pack: center;
-    box-align: center; } }
+    /* /1* Internet Explorer 10 *1/ */
+    /* display:-ms-flexbox; */
+    /* -ms-flex-pack:center; */
+    /* -ms-flex-align:center; */
+    /* /1* Firefox *1/ */
+    /* display:-moz-box; */
+    /* -moz-box-pack:center; */
+    /* -moz-box-align:center; */
+    /* /1* Safari, Chrome, and Opera *1/ */
+    /* display:-webkit-box; */
+    /* -webkit-box-pack:center; */
+    /* -webkit-box-align:center; */
+    /* /1* W3C *1/ */
+    /* display:box; */
+    /* box-pack:center; */
+    /* box-align:center; */
+    /* } */ } }
 /* If compiling in the command line:
 
 sass --watch style.scss:../style.css */
