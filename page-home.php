@@ -12,9 +12,9 @@
 <?php Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header' ) ); ?>
 
 <div class="flexible-box flexible-box_logo">
-	<div id="logo">
+	<div class="logo-holder">
     			
-<section id="logo">
+<section class="logo">
 	<a href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php echo bloginfo('stylesheet_directory'); ?>/images/logo-fsd.png" alt="home page" /></a>
 </section> <!-- /logo -->
 
@@ -22,12 +22,12 @@
 <?php wp_nav_menu( array( 'menu_class' => 'nav-home',) ); ?>
 	</nav> <!-- /nav -->	
 			
-    		</div> <!-- /logo -->
+    		</div> <!-- /logo-holder -->
 </div><!-- /flexible-box -->
 
 <div class="flexible-box flexible-box_intro-home">
 	<div class="intro-box">
-		<section id="intro">
+		<section class="intro">
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
 <?php the_content(); ?>

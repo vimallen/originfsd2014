@@ -8,7 +8,8 @@
 }
 
 .flexible-box_intro-home {
-	background-color: rgb(250,248,246);
+	background-color: $fsd-background;
+	
 }	
 
 
@@ -19,11 +20,11 @@
 
 
 
-#logo,   {
+.logo-holder   {
 	width: 100%;
 }
 
-#logo {
+.logo {
 	margin-bottom: 2.6em;
 }
 
@@ -31,14 +32,15 @@
 	width: 100%;
 }
 
-#intro {
+
+.intro {
 	width: 100%;
 	background-color: $fsd-background;
-	padding: 2em 0;
+	padding: 2em 2em;
 	margin: 0;
 }
-/* 1020px and above */
-@media screen and (min-width: 716px){
+
+@media only screen and (min-width: 37.5em) /* 600px */{
 	.flexible-box{
 		width: 50%;
 		height: 100%;
