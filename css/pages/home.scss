@@ -13,20 +13,23 @@
 }	
 
 
-#logo{
+.logo{
 	width: 100%;
-	padding: 3em 0 2em 0;
+	border-bottom: 2px solid white;
+
 }
 
-
+@media only screen and (min-width: 37.5em) /* 600px */{
+	section.logo	{
+				margin-top: -5em;
+}
+}
 
 .logo-holder   {
 	width: 100%;
 }
 
-.logo {
-	margin-bottom: 2.6em;
-}
+
 
 .intro-box {
 	width: 100%;
@@ -71,11 +74,5 @@
 		box-align:center;
 	}
 
-	#logo{
-		padding-top: 0.1em;
-	}
-	#preorder {
-		float: right;
-	}
 	
 }
