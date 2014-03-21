@@ -719,10 +719,11 @@ footer {
 .flexible-box {
   width: 100%; }
 
-#flexible-box_logo {
-  background-color: #663079; }
+.flexible-box_logo {
+  background-color: #663079;
+  text-align: center; }
 
-#flexible-box_intro-home {
+.flexible-box_intro-home {
   background-color: #faf8f6; }
 
 #logo {
@@ -735,10 +736,10 @@ footer {
 #logo {
   margin-bottom: 2.6em; }
 
-#preorder-box {
+.intro-box {
   width: 100%; }
 
-#preorder {
+#intro {
   width: 100%;
   background-color: white;
   padding: 2em 0;

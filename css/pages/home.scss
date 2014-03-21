@@ -2,11 +2,12 @@
 	width: 100%;
 }
 
-#flexible-box_logo {
+.flexible-box_logo {
 	background-color: $fsd-purple;
+	text-align: center;
 }
 
-#flexible-box_intro-home {
+.flexible-box_intro-home {
 	background-color: rgb(250,248,246);
 }	
 
@@ -26,11 +27,11 @@
 	margin-bottom: 2.6em;
 }
 
-#preorder-box {
+.intro-box {
 	width: 100%;
 }
 
-#preorder {
+#intro {
 	width: 100%;
 	background-color: $fsd-background;
 	padding: 2em 0;
