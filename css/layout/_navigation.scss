@@ -9,9 +9,7 @@
 
 .nav-home	{
 			padding-top: 3em;
-}
-
- 
+	}
 }
 
 
@@ -64,12 +62,19 @@ a:link	{
 .nav{
     list-style:none;
 }
-.nav-home{
+.nav-home{	/*	mobile	*/
 
     > li{
         display:list-item;
 		list-style: none;
 		margin-left: -3em;
+		&:after {
+    /* Or @extend clearfix */
+    content: "";
+    display: table;
+    clear: both;
+}
+  
 
         > a{
             display:block;
@@ -79,6 +84,65 @@ a:link	{
         }
     }
 }
+@media only screen and (min-width: 37.5em) /* 600px */ {
+	/* Turns nav horizontal.  */   
+ .nav{
+    list-style:none;
+    margin-left:0;
+   	float: none;
+	margin-top:	3em;
+	margin-left: -2em;
+	 &:after {
+    /* Or @extend clearfix */
+    content: "";
+    display: table;
+    clear: both;
+} 
+
+    > li{
+
+        &,
+        > a{
+            display:inline-block;
+           *display:inline;
+            zoom:1;
+			padding-right: 0.25em;
+		}
+    }
+}
+
+}
+
+
+@media only screen and (min-width: 48em) /* 768px */ {
+/* Turns nav horizontal.  */   
+ .nav{
+    list-style:none;
+    margin-left:0;
+   	float: right;
+	margin-top:	-8em;
+	 &:after {
+    /* Or @extend clearfix */
+    content: "";
+    display: table;
+    clear: both;
+} 
+
+    > li{
+
+        &,
+        > a{
+            display:inline-block;
+           *display:inline;
+            zoom:1;
+			padding-right: 0.25em;
+		}
+    }
+}
+
+}
+
+
 
 
 a[href^="mailto"] { color: $fsd-orange; }

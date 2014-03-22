@@ -18,6 +18,14 @@ body {
 }
 
 body:not(.home)	{
-				background-color: #ccc;
+				background-color: #fff;
 				
+}
+
+.logo-base 	{
+		
+		background-color: $fsd-purple;
+		border-bottom: 12px solid $fsd-orange;
+		padding: 2em 1em 1em 2em;
+		border-bottom: 5px solid $fsd-orange;
 }

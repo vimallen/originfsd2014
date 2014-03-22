@@ -3,3 +3,14 @@
   -moz-box-sizing: border-box; 
   box-sizing: border-box;
 }
+
+
+body:not(.home)	{
+				padding: 0 10%;
+}
+
+
+
+.logo-base	{
+		width:16em;
+}

@@ -585,7 +585,13 @@ body {
   transition: 0.3s ease; }
 
 body:not(.home) {
-  background-color: #ccc; }
+  background-color: #fff; }
+
+.logo-base {
+  background-color: #663079;
+  border-bottom: 12px solid #f18500;
+  padding: 2em 1em 1em 2em;
+  border-bottom: 5px solid #f18500; }
 
 /* =Helper */
 .ir {
@@ -670,6 +676,12 @@ body:not(.home) {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+body:not(.home) {
+  padding: 0 10%; }
+
+.logo-base {
+  width: 16em; }
+
 footer {
   clear: both;
   background-color: #fff;
@@ -733,15 +745,59 @@ a:link {
 .nav {
   list-style: none; }
 
-.nav-home > li {
-  display: list-item;
-  list-style: none;
-  margin-left: -3em; }
-  .nav-home > li > a {
-    display: block;
-    font-size: 1em;
-    padding-bottom: 1em; }
+.nav-home {
+  /*	mobile	*/ }
+  .nav-home > li {
+    display: list-item;
+    list-style: none;
+    margin-left: -3em; }
+    .nav-home > li:after {
+      /* Or @extend clearfix */
+      content: "";
+      display: table;
+      clear: both; }
+    .nav-home > li > a {
+      display: block;
+      font-size: 1em;
+      padding-bottom: 1em; }
 
+@media only screen and (min-width: 37.5em) {
+  /* Turns nav horizontal.  */
+  .nav {
+    list-style: none;
+    margin-left: 0;
+    float: none;
+    margin-top: 3em;
+    margin-left: -2em; }
+    .nav:after {
+      /* Or @extend clearfix */
+      content: "";
+      display: table;
+      clear: both; }
+    .nav > li,
+    .nav > li > a {
+      display: inline-block;
+      *display: inline;
+      zoom: 1;
+      padding-right: 0.25em; } }
+@media only screen and (min-width: 48em) {
+  /* Turns nav horizontal.  */
+  .nav {
+    list-style: none;
+    margin-left: 0;
+    float: right;
+    margin-top: -8em; }
+    .nav:after {
+      /* Or @extend clearfix */
+      content: "";
+      display: table;
+      clear: both; }
+    .nav > li,
+    .nav > li > a {
+      display: inline-block;
+      *display: inline;
+      zoom: 1;
+      padding-right: 0.25em; } }
 a[href^="mailto"] {
   color: #f18500; }
 
