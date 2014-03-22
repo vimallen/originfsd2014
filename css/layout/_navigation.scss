@@ -1,66 +1,85 @@
 /* =Links */
 
+.nav-home	{
+			padding-top: 1.5em;
+}
 
 
+@media only screen and (min-width: 37.5em) /* 600px */ {
+
+.nav-home	{
+			padding-top: 3em;
+}
+
+ 
+}
+
+
+
+
+
+.nav-home a:link {color: lighten($fsd-purple, 30);}
+.nav-home a:visited {color: lighten($fsd-purple, 30);}
+.nav-home a:hover {color: $fsd-orange;}
+.nav-home a:active {color: lighten($fsd-purple, 20);}
+
+.nav-home a:link	{
+		
+		-webkit-transition:color 0.5s ease-in;  
+		-moz-transition:color 0.5s ease-in;  
+		-o-transition:color 0.5s ease-in;  
+		transition:color 0.5s ease-in;  
+		
+}
+
+.nav li 	{
+		padding-bottom: 1em;
+}
 
 /* Links global */
 
+a:link {color: $fsd-purple;}
+a:visited {color: $fsd-purple;}
+a:hover {color: $fsd-orange;}
+a:active {color: lighten($fsd-purple, 20);}			
+
+
+a:link	{
+		-webkit-transition:color 0.5s ease-in;  
+		-moz-transition:color 0.5s ease-in;  
+		-o-transition:color 0.5s ease-in;  
+		transition:color 0.5s ease-in;  
+}
 
 /*	current page highlighting	*/
 
-/* #menu-nav-main .current-menu-item > a,#menu-nav-main .current-menu-ancestor > a, */
+#menu-nav-main .current-menu-item > a,#menu-nav-main .current-menu-ancestor > a,
 
-/* #menu-nav-main .current_page_item > a, */
+#menu-nav-main .current_page_item > a,
 
-/* #menu-nav-main .current_page_ancestor > a 	{ */
-/* 											color: orange; */
-/* } */
+#menu-nav-main .current_page_ancestor > a 	{
+											color: $fsd-orange;
+}
 
-/* .nav{ */
-/*     list-style:none; */
-/* } */
-/* .nav-home{ */
+.nav{
+    list-style:none;
+}
+.nav-home{
 
-/*     > li{ */
-/*         display:list-item; */
-/* 		list-style: none; */
-/* 		margin-left: -3em; */
+    > li{
+        display:list-item;
+		list-style: none;
+		margin-left: -3em;
 
-/*         > a{ */
-/*             display:block; */
-/* 			font-size: 1em; */
-/* 			padding-bottom: 1em; */
+        > a{
+            display:block;
+			font-size: 1em;
+			padding-bottom: 1em;
 			
-/*         } */
-/*     } */
-/* } */
-
-/* =Action */
- 
-/* @media only screen and (min-width: 48em) /1* 768px *1/ { */
+        }
+    }
+}
 
 
-
-
-
-			
-
-/* Turns nav horizontal. Defaults for mobile. See media queries */   
- /* .nav{ */
- /*    list-style:none; */
- /*    margin-left:0; */
- /*    @extend .clearfix; */
-	/* float: right; */
-	/* margin-top:	-8em; */
-
- /*    > li{ */
-
- /*        &, */
- /*        > a{ */
- /*            display:inline-block; */
- /*           *display:inline; */
- /*            zoom:1; */
-			/* padding-right: 0.25em; */
-		/* } */
- /*    } */
-/* } */
+a[href^="mailto"] { color: $fsd-orange; }
+a[href^="mailto"]:hover:after { content: " > " attr(title); }

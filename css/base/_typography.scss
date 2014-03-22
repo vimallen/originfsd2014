@@ -17,6 +17,12 @@ body	{
 		line-height: 160%;
 }
 
+@media only screen and (min-width: 87.5em) /* 1400px */ {
+ 
+     body {font-size:130%;} 
+	
+}
+
 h1,h2,h3,h4,h5,h6	{
  					font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 					font-weight: bold;
