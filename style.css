@@ -635,16 +635,26 @@ body:not(.home) {
 .invisible {
   visibility: hidden; }
 
-.clearfix:before,
-.clearfix:after {
+.clearfix:before, .grid:before,
+.clearfix:after,
+.grid:after {
   content: " ";
   display: table; }
 
-.clearfix:after {
+.clearfix:after, .grid:after {
   clear: both; }
 
-.clearfix {
+.clearfix, .grid {
   *zoom: 1; }
+
+.grid {
+  /* background: gray; */
+  margin: 0 0 0.5em 0;
+  padding-left: 0; }
+
+/* removes padding left for mobile */
+.grid .grid-pad {
+  padding-left: 0; }
 
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
@@ -659,11 +669,18 @@ body:not(.home) {
 
 /* Grid for portfolio landing page	*/
 @media only screen and (min-width: 48em) {
-  [class*='col-'] {
+  [class='col-portfolio'] {
     float: left;
     width: 20%;
     padding-right: 0.5em; }
-    .grid [class*='col-']:last-of-type {
+    .grid [class='col-portfolio']:last-of-type {
+      padding-right: 0.5em; }
+
+  [class='col-category'] {
+    float: left;
+    width: 50%;
+    padding-right: 0.5em; }
+    .grid [class='col-category']:last-of-type {
       padding-right: 0.5em; }
 
   /* Opt-in outside padding */

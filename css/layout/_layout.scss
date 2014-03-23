@@ -19,7 +19,7 @@ body:not(.home)	{
 
 @media only screen and (min-width: 48em) /* 768px */ {
 
-[class*='col-'] {
+[class='col-portfolio'] {
 	float: left;
 	width: 20%;
   padding-right: $pad;
@@ -27,6 +27,17 @@ body:not(.home)	{
   	padding-right: $pad;
   }
 }
+
+
+[class='col-category'] {
+	float: left;
+	width: 50%;
+  padding-right: $pad;
+  .grid &:last-of-type {
+  	padding-right: $pad;
+  }
+}
+
 
 /* Opt-in outside padding */
 .grid-pad {

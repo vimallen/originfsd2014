@@ -1,7 +1,7 @@
 <?php
 /**
  /**
- * Template Name: Page-portfolio
+ * Template Name: Page-bars
  *
  * @package 	WordPress
  * @subpackage 	Starkers
@@ -13,7 +13,7 @@
 <div class="grid grid-pad wrapper">
  <?php the_content(); ?>
 <?php
-          $loop = new WP_Query(array('post_type' => 'module-portfolio',
+          $loop = new WP_Query(array('post_type' => 'module-bars',
           'posts_per_page' => 10,
           'orderby'=>'title',
            'order'=>'ASC',
@@ -26,8 +26,8 @@
           $website_url = $custom["website_url"][0];
      ?>
 
-	<div class="col-portfolio">
-		<div class="module-portfolio">
+	<div class="col-category">
+		<div class="module-bars>
 		<h3><?php the_title(); ?></h3>
 		<?php the_post_thumbnail(); ?> </a>
 		<?php the_content(); ?>

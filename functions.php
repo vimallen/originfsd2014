@@ -56,10 +56,9 @@ function remove_width_attribute( $html ) {
 	e.g. require_once( 'custom-post-types/your-custom-post-type.php' );
 	
 	======================================================================================================================== */
-// Creates Module post type
-
-	register_post_type('module', array(
-	'label' => 'Module',
+// Creates Module-home post type
+	register_post_type('module-home', array(
+	'label' => 'Module-home',
 	'public' => true,
 	'show_ui' => true,
 	'capability_type' => 'post',
@@ -79,7 +78,8 @@ function remove_width_attribute( $html ) {
 	'page-attributes',)
 	) );
 
-register_post_type('module-portfolio', array(
+
+		register_post_type('module-portfolio', array(
 		'label' => 'Module-portfolio',
 		'public' => true,
 		'show_ui' => true,
@@ -163,6 +163,8 @@ register_post_type('module-portfolio', array(
 		'author',
 		'page-attributes',)
 		) );
+
+
 	/* ========================================================================================================================
 	
 	Scripts
