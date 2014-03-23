@@ -565,6 +565,9 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   font-weight: bold; }
 
+@media only screen and (min-width: 48em) {
+  .main p, ul, article {
+    max-width: 40em; } }
 /* =Responsive images */
 img {
   max-width: 100%;
