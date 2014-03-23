@@ -59,41 +59,41 @@ img {
   height: auto; }
 
 /* =Modules */
-/* .module-portfolio h3, .module-category h3	{ */
-/* 						padding-bottom: 2px; */
-/* 						border-bottom: 3px solid $fsd-purple; */
-/* 						color: #444; */
-/* } */
-/* .module-portfolio, .module-category 	{ */
-/* 				 	padding: 2px 4px 0px 4px; */
-/* 				  	border-bottom: 10px solid $fsd-orange; */
-/* 					min-height: 18em; */
-/* } */
-/* .module-portfolio:hover, .module-category:hover	{ */
-/* 						background-color: lighten($fsd-purple, 54); */
-/* } */
-/* .module-portfolio:hover, .module-category:hover	{ */
-/* 							-webkit-transition:background-color 0.5s ease-in; */
-/* 							-moz-transition:background-color 0.5s ease-in; */
-/* 							-o-transition:background-color 0.5s ease-in; */
-/* 							transition:background-color 0.5s ease-in; */
-/* 							text-decoration: none; */
-/* } */
-/* .module-category h3	{ */
-/* 					min-height: 3em; */
-/* } */
-/* /1* We want to insert >> after Read more links *1/ */
-/* .module-portfolio p:last-child:after { */
-/*   content: " >>"; */
-/*   color: $fsd-orange; */
-/* } */
-/* /1* but not after img links *1/ */
-/* .module-portfolio p:first-child:after { */
-/* 	content: none; */
-/* } */
-/* .module-portfolio, .module-category{ */
-/* 					margin-bottom: 2em; */
-/* } */
+.module-portfolio h3, .module-category h3 {
+  padding-bottom: 2px;
+  border-bottom: 3px solid #663079;
+  color: #444; }
+
+.module-portfolio, .module-category {
+  padding: 2px 4px 0px 4px;
+  border-bottom: 10px solid #f18500;
+  min-height: 18em; }
+
+.module-portfolio:hover, .module-category:hover {
+  background-color: #e5d0ec; }
+
+.module-portfolio:hover, .module-category:hover {
+  -webkit-transition: background-color 0.5s ease-in;
+  -moz-transition: background-color 0.5s ease-in;
+  -o-transition: background-color 0.5s ease-in;
+  transition: background-color 0.5s ease-in;
+  text-decoration: none; }
+
+.module-category h3 {
+  min-height: 3em; }
+
+/* We want to insert >> after Read more links */
+.module-portfolio p:last-child:after {
+  content: " >>";
+  color: #f18500; }
+
+/* but not after img links */
+.module-portfolio p:first-child:after {
+  content: none; }
+
+.module-portfolio, .module-category {
+  margin-bottom: 2em; }
+
 /*! normalize.css v1.1.2 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -646,34 +646,6 @@ body:not(.home) {
 .clearfix {
   *zoom: 1; }
 
-/* Grid for category pages */
-[class='col-category'] {
-  float: left;
-  width: 33.33%;
-  padding-right: 0.5em; }
-  .grid [class='col-category']:last-of-type {
-    padding-right: 0.5em; }
-
-/* Opt-in outside padding */
-.grid-pad {
-  padding: 0.5em 0 0.5em 0.5em; }
-  .grid-pad [class='col-category']:last-of-type {
-    padding-right: 0.5em; }
-
-/* Grid for portfolio landing page	*/
-[class*='col-'] {
-  float: left;
-  width: 20%;
-  padding-right: 0.5em; }
-  .grid [class*='col-']:last-of-type {
-    padding-right: 0.5em; }
-
-/* Opt-in outside padding */
-.grid-pad {
-  padding: 0.5em 0 0.5em 0.5em; }
-  .grid-pad [class*='col-']:last-of-type {
-    padding-right: 0.5em; }
-
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -685,6 +657,20 @@ body:not(.home) {
 .logo-base {
   width: 16em; }
 
+/* Grid for portfolio landing page	*/
+@media only screen and (min-width: 48em) {
+  [class*='col-'] {
+    float: left;
+    width: 20%;
+    padding-right: 0.5em; }
+    .grid [class*='col-']:last-of-type {
+      padding-right: 0.5em; }
+
+  /* Opt-in outside padding */
+  .grid-pad {
+    padding: 0.5em 0 0.5em 0.5em; }
+    .grid-pad [class*='col-']:last-of-type {
+      padding-right: 0.5em; } }
 footer {
   clear: both;
   background-color: #fff;
@@ -868,64 +854,6 @@ a[href^="mailto"]:hover:after {
 
 sass --watch style.scss:../style.css */
 /* =Author's custom styles */
-/* =Layout-mobile */
-/* removes padding left for mobile */
-/* =Media queries */
-/* =Action */
-@media only screen and (min-width: 48em) {
-  /* Turns nav horizontal. Defaults for mobile. See media queries */
-  /* .nav{ */
-  /*    list-style:none; */
-  /*    margin-left:0; */
-  /*    @extend .clearfix; */
-  /* float: right; */
-  /* margin-top:	-8em; */
-  /*    > li{ */
-  /*        &, */
-  /*        > a{ */
-  /*            display:inline-block; */
-  /*           *display:inline; */
-  /*            zoom:1; */
-  /* padding-right: 0.25em; */
-  /* } */
-  /*    } */
-  /* } */
-  /* Grid for portfolio landing page	*/
-  [class*='col-'] {
-    float: left;
-    width: 20%;
-    padding-right: 0.5em; }
-    .grid [class*='col-']:last-of-type {
-      padding-right: 0.5em; }
-
-  /* /1* Opt-in outside padding *1/ */
-  /* .grid-pad { */
-  /*   padding: $pad 0 $pad $pad; */
-  /*   [class*='col-']:last-of-type { */
-  /*     padding-right: $pad; */
-  /*   } */
-  /* } */
-  /* /1* Grid for category pages *1/ */
-  /* [class='col-category'] { */
-  /* 	float: left; */
-  /* 	width: 33.33%; */
-  /*   padding-right: $pad; */
-  /*   .grid &:last-of-type { */
-  /*   	padding-right: $pad; */
-  /*   } */
-  /* } */
-  /* /1* Opt-in outside padding *1/ */
-  /* .grid-pad { */
-  /*   padding: $pad 0 $pad $pad; */
-  /*   [class='col-category']:last-of-type { */
-  /*     padding-right: $pad; */
-  /*   } */
-  /* } */ }
-/* WIDESCREEN */
-/* Increased body size for legibility */
-@media only screen and (min-width: 87.5em) {
-  body {
-    font-size: 120%; } }
 /* =Print styles */
 @media print {
   * {

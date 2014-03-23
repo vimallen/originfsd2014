@@ -1,50 +1,50 @@
 
 /* =Modules */
 
-/* .module-portfolio h3, .module-category h3	{ */
-/* 						padding-bottom: 2px; */
-/* 						border-bottom: 3px solid $fsd-purple; */	
-/* 						color: #444; */
-/* } */
+.module-portfolio h3, .module-category h3	{
+						padding-bottom: 2px;
+						border-bottom: 3px solid $fsd-purple;	
+						color: #444;
+}
 
 
 
 
-/* .module-portfolio, .module-category 	{ */
-/* 				 	padding: 2px 4px 0px 4px; */
-/* 				  	border-bottom: 10px solid $fsd-orange; */
-/* 					min-height: 18em; */
-/* } */
+.module-portfolio, .module-category 	{
+				 	padding: 2px 4px 0px 4px;
+				  	border-bottom: 10px solid $fsd-orange;
+					min-height: 18em;
+}
 
-/* .module-portfolio:hover, .module-category:hover	{ */
-/* 						background-color: lighten($fsd-purple, 54); */
-/* } */
+.module-portfolio:hover, .module-category:hover	{
+						background-color: lighten($fsd-purple, 54);
+}
 
-/* .module-portfolio:hover, .module-category:hover	{ */
-/* 							-webkit-transition:background-color 0.5s ease-in; */  
-/* 							-moz-transition:background-color 0.5s ease-in; */  
-/* 							-o-transition:background-color 0.5s ease-in; */  
-/* 							transition:background-color 0.5s ease-in; */  
-/* 							text-decoration: none; */
-/* } */
+.module-portfolio:hover, .module-category:hover	{
+							-webkit-transition:background-color 0.5s ease-in;  
+							-moz-transition:background-color 0.5s ease-in;  
+							-o-transition:background-color 0.5s ease-in;  
+							transition:background-color 0.5s ease-in;  
+							text-decoration: none;
+}
 
-/* .module-category h3	{ */
-/* 					min-height: 3em; */
-/* } */
+.module-category h3	{
+					min-height: 3em;
+}
 
-/* /1* We want to insert >> after Read more links *1/ */
+/* We want to insert >> after Read more links */
 
 
-/* .module-portfolio p:last-child:after { */
-/*   content: " >>"; */
-/*   color: $fsd-orange; */
-/* } */
+.module-portfolio p:last-child:after {
+  content: " >>";
+  color: $fsd-orange;
+}
 
-/* /1* but not after img links *1/ */
-/* .module-portfolio p:first-child:after { */
-/* 	content: none; */
-/* } */
+/* but not after img links */
+.module-portfolio p:first-child:after {
+	content: none;
+}
 
-/* .module-portfolio, .module-category{ */
-/* 					margin-bottom: 2em; */
-/* } */
+.module-portfolio, .module-category{
+					margin-bottom: 2em;
+}
