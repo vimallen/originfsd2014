@@ -676,7 +676,7 @@ body:not(.home) {
 
   [class='col-category'] {
     float: left;
-    width: 50%;
+    width: 33.33%;
     padding-right: 0.5em; }
     .grid [class='col-category']:last-of-type {
       padding-right: 0.5em; }
