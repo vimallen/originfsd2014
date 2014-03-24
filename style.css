@@ -558,16 +558,14 @@ body {
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   line-height: 160%; }
 
-@media only screen and (min-width: 87.5em) {
-  body {
-    font-size: 130%; } }
 h1, h2, h3, h4, h5, h6 {
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   font-weight: bold; }
 
 @media only screen and (min-width: 48em) {
-  .main p, ul, article {
+  .main p, article {
     max-width: 40em; } }
+/* WIDESCREEN  is in style.scss	*/
 /* =Responsive images */
 img {
   max-width: 100%;
@@ -871,6 +869,11 @@ a[href^="mailto"]:hover:after {
 
 sass --watch style.scss:../style.css */
 /* =Author's custom styles */
+/* WIDESCREEN */
+/* Increased body size for legibility */
+@media only screen and (min-width: 87.5em) {
+  body {
+    font-size: 135%; } }
 /* =Print styles */
 @media print {
   * {
