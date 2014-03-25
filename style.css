@@ -582,9 +582,6 @@ body {
   background-color: #663079;
   color: #444; }
 
-* {
-  transition: 0.3s ease; }
-
 body:not(.home) {
   background-color: #fff; }
 
@@ -871,9 +868,9 @@ sass --watch style.scss:../style.css */
 /* =Author's custom styles */
 /* WIDESCREEN */
 /* Increased body size for legibility */
-@media only screen and (min-width: 87.5em) {
+@media only screen and (min-width: 81.25em) {
   body {
-    font-size: 135%; } }
+    font-size: 130%; } }
 /* =Print styles */
 @media print {
   * {
