@@ -70,7 +70,7 @@ img {
   min-height: 18em; }
 
 .module-portfolio:hover, .module-category:hover {
-  background-color: #e5d0ec; }
+  background-color: #ccc; }
 
 .module-portfolio:hover, .module-category:hover {
   -webkit-transition: background-color 0.5s ease-in;
@@ -591,6 +591,9 @@ body:not(.home) {
   padding: 2em 1em 1em 2em;
   border-bottom: 5px solid #f18500; }
 
+.main {
+  margin-top: 3em; }
+
 /* =Helper */
 .ir {
   background-color: transparent;
@@ -644,7 +647,7 @@ body:not(.home) {
 
 .grid {
   /* background: gray; */
-  margin: 0 0 0.5em 0;
+  margin: 0 0 2em 0;
   padding-left: 0; }
 
 /* removes padding left for mobile */
@@ -667,22 +670,22 @@ body:not(.home) {
   [class='col-portfolio'] {
     float: left;
     width: 33%;
-    padding-right: 0.5em; }
+    padding-right: 2em; }
     .grid [class='col-portfolio']:last-of-type {
-      padding-right: 0.5em; }
+      padding-right: 2em; }
 
   [class='col-category'] {
     float: left;
     width: 33.33%;
-    padding-right: 0.5em; }
+    padding-right: 2em; }
     .grid [class='col-category']:last-of-type {
-      padding-right: 0.5em; }
+      padding-right: 2em; }
 
   /* Opt-in outside padding */
   .grid-pad {
-    padding: 0.5em 0 0.5em 0.5em; }
+    padding: 2em 0 2em 2em; }
     .grid-pad [class*='col-']:last-of-type {
-      padding-right: 0.5em; } }
+      padding-right: 2em; } }
 footer {
   clear: both;
   background-color: #fff;
@@ -698,10 +701,10 @@ footer {
   .nav-home {
     padding-top: 3em; } }
 .nav-home a:link {
-  color: #b478ca; }
+  color: #bd87cf; }
 
 .nav-home a:visited {
-  color: #b478ca; }
+  color: #bd87cf; }
 
 .nav-home a:hover {
   color: #f18500; }
@@ -845,23 +848,22 @@ a[href^="mailto"]:hover:after {
     display: box;
     box-align: center;
     float: left;
-    /* /1* Internet Explorer 10 *1/ */
-    /* display:-ms-flexbox; */
-    /* -ms-flex-pack:center; */
-    /* -ms-flex-align:center; */
-    /* /1* Firefox *1/ */
-    /* display:-moz-box; */
-    /* -moz-box-pack:center; */
-    /* -moz-box-align:center; */
-    /* /1* Safari, Chrome, and Opera *1/ */
-    /* display:-webkit-box; */
-    /* -webkit-box-pack:center; */
-    /* -webkit-box-align:center; */
-    /* /1* W3C *1/ */
-    /* display:box; */
-    /* box-pack:center; */
-    /* box-align:center; */
-    /* } */ } }
+    /* Internet Explorer 10 */
+    display: -ms-flexbox;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+    /* Firefox */
+    display: -moz-box;
+    -moz-box-pack: center;
+    -moz-box-align: center;
+    /* Safari, Chrome, and Opera */
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    /* W3C */
+    display: box;
+    box-pack: center;
+    box-align: center; } }
 /* If compiling in the command line:
 
 sass --watch style.scss:../style.css */
