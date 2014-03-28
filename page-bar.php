@@ -12,6 +12,7 @@
 
 <div class="grid grid-pad wrapper">
  <?php the_content(); ?>
+<h2><?php the_title(); ?></h2>
 <?php
           $loop = new WP_Query(array('post_type' => 'module-bar',
           'posts_per_page' => 10,
