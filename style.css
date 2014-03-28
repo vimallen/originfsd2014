@@ -868,6 +868,9 @@ a[href^="mailto"]:hover:after {
 
 sass --watch style.scss:../style.css */
 /* =Author's custom styles */
+.ngg-slideshow {
+  background-color: #444; }
+
 /* WIDESCREEN */
 /* Increased body size for legibility */
 @media only screen and (min-width: 81.25em) {
