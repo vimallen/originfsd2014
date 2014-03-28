@@ -868,9 +868,11 @@ a[href^="mailto"]:hover:after {
 
 sass --watch style.scss:../style.css */
 /* =Author's custom styles */
-.ngg-slideshow {
-  background-color: #444; }
+/* alts to NextGen slideshow have to made here. The dashboard options don't work.
 
+/wp-content/plugins/nextgen-gallery/products/photocrati_nextgen/modules/nextgen_basic_gallery/static/slideshow/nextgen_basic_slideshow.css?ver=3.8.1
+
+*/
 /* WIDESCREEN */
 /* Increased body size for legibility */
 @media only screen and (min-width: 81.25em) {
