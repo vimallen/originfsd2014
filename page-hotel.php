@@ -1,7 +1,7 @@
 <?php
 /**
  /**
- * Template Name: Page-bars
+ * Template Name: Page-hotel
  *
  * @package 	WordPress
  * @subpackage 	Starkers
@@ -13,7 +13,7 @@
 <div class="grid grid-pad wrapper">
  <?php the_content(); ?>
 <?php
-          $loop = new WP_Query(array('post_type' => 'module-bars',
+          $loop = new WP_Query(array('post_type' => 'module-hotel',
           'posts_per_page' => 10,
           'orderby'=>'title',
            'order'=>'ASC',
@@ -27,7 +27,7 @@
      ?>
 
 	<div class="col-category">
-		<div class="module-bars>
+		<div class="module-category">
 		<h3><?php the_title(); ?></h3>
 		<?php the_post_thumbnail(); ?> </a>
 		<?php the_content(); ?>
