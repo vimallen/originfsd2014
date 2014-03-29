@@ -184,6 +184,27 @@ function remove_width_attribute( $html ) {
 		'author',
 		'page-attributes',)
 		) );
+
+		register_post_type('module-residential', array(
+		'label' => 'Module-residential',
+		'public' => true,
+		'show_ui' => true,
+		'capability_type' => 'post',
+		'hierarchical' => false,
+		'rewrite' => array('slug' => 'bar'),
+		'query_var' => true,
+		'supports' => array(
+		'title',
+		'editor',
+		'excerpt',
+		'trackbacks',
+		'custom-fields',
+		'',
+		'revisions',
+		'thumbnail',
+		'author',
+		'page-attributes',)
+		) );
 	/* ========================================================================================================================
 	
 	Scripts
