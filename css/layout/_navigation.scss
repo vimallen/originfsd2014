@@ -146,4 +146,4 @@ a:link	{
 
 
 a[href^="mailto"] { color: $fsd-orange; }
-a[href^="mailto"]:hover:after { content: " > " attr(title); }
+body.contact a[href^="mailto"]:hover:after { content: " > " attr(title); }

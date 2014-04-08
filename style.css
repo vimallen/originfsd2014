@@ -805,7 +805,7 @@ a:link {
 a[href^="mailto"] {
   color: #f18500; }
 
-a[href^="mailto"]:hover:after {
+body.contact a[href^="mailto"]:hover:after {
   content: " > " attr(title); }
 
 .flexible-box {
