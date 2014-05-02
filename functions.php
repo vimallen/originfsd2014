@@ -49,6 +49,14 @@ function remove_width_attribute( $html ) {
    return $html;
 }
 
+// CUSTOM ADMIN LOGIN HEADER LOGO
+ 
+function my_custom_login_logo()
+{
+    echo '<style  type="text/css"> h1 a {  background-image:url(' . get_bloginfo('template_directory') . '/images/logo-fsd-login.png)  !important; background-size: cover;} </style>';
+}
+add_action('login_head',  'my_custom_login_logo');
+
 	/* ========================================================================================================================
 	
 	Custom Post Types - include custom post types and taxonimies here e.g.
