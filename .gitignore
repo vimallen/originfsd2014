@@ -56,3 +56,8 @@ config.codekit
 
 *.sass-cache
 *.scsccc
+
+# Codekit
+#########
+
+*configs.codekit
